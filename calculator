@@ -1,0 +1,55 @@
+#Function to calculate sum which accepts two parameters and returns int
+def findSum(a,b):
+    ans = a+b
+    return ans
+    
+#Function to calculate difference which accepts two parameters and returns int    
+def finddifference(a,b):
+    ans = a-b
+    return ans
+    
+#Function to calculate product which accepts two parameters and returns int
+def findproduct(a,b):
+    ans = a*b
+    return ans
+    
+#Function to calculate quotient which accepts two parameters and returns int
+def findquotient(a,b):
+    ans = a/b
+    return ans
+    
+#Accepting numbers from user to calculate
+print("Welcome to my calcultor")
+number1 = int(input("Please enter number 1: "))
+number2 = int(input("Please enter number 2: "))
+
+#Displaying the menu and Accepting the choice of fundamental operations to calculate from user
+print("Please choose a number from the given menu")
+print("Menu:")
+print(" 1.Addition")
+print(" 2.Subtraction")
+print(" 3.Multiplication")
+print(" 4.Division")
+choice = int(input("Please choose a number :"))
+
+#Performing operation
+if(choice == 1):
+    result = findSum(number1,number2)
+    print("The addition of ", number1, "and ", number2,  " is ", result)
+elif(choice == 2):
+    result = finddifference(number1,number2)
+    print("The subtraction of ", number1, "and ", number2,  " is ", result)
+elif(choice == 3):
+    result = findproduct(number1,number2)
+    print("The multiplication of ", number1, "and ", number2,  " is ", result)
+elif(choice == 4):
+    result = findquotient(number1,number2)
+    print("The division of ", number1, "and ", number2,  " is ", result)
+else:
+    print("Your choice is invalid")
+        
+        
+ 
+
+
+    
